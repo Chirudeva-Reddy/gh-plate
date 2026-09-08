@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/SimAin/gh-plate/compare/v1.7.1...v1.8.0) (2026-09-08)
+
+
+### Features
+
+* add --format json to every view ([#117](https://github.com/SimAin/gh-plate/issues/117)) ([68dc033](https://github.com/SimAin/gh-plate/commit/68dc0338a173d7576d51c681be32106fe4db07b4))
+
 ## [1.7.1](https://github.com/SimAin/gh-plate/compare/v1.7.0...v1.7.1) (2026-08-28)
 
 
