@@ -63,6 +63,9 @@ def pr_rows() -> list[prs_model.PrRow]:
             rollup="FAILURE",
             created_at="2026-05-20T09:00:00Z",
             last_commit=("2026-06-05T09:00:00Z", "user"),
+            additions=1200,
+            deletions=300,
+            changed_files=25,
         ),
         pr_node(
             35,
@@ -115,7 +118,7 @@ PRS_REPO_80 = """\
    PR      Title             Assignee          Size   Age  Last  Review         CI  Cmt
 ── yours (2) ──────────────────────────────────────────────────────────────────────────
 ✓  #41     Add width-aware…  me                S       7d    1d  approved       ✓     0
-•  #37     Rework the spri…  me                S       4w    2w  pending        ✗     0
+•  #37     Rework the spri…  me                XL      4w    2w  pending        ✗     0
 ── to review (2) ──────────────────────────────────────────────────────────────────────
 •  #35     重构面板布局与…   alice             S       3d    2d  pending              3
 •  #30     chore(main): re…  Release PR        S       0d        pending        ✓     0
@@ -126,7 +129,7 @@ PRS_REPO_120 = """\
    PR      Title                                              Assignee          Size   Age  Last  Review         CI  Cmt
 ── yours (2) ───────────────────────────────────────────────────────────────────────────────────────────────────────────
 ✓  #41     Add width-aware truncation                         me                S       7d    1d  approved       ✓     0
-•  #37     Rework the sprint buckets                          me                S       4w    2w  pending        ✗     0
+•  #37     Rework the sprint buckets                          me                XL      4w    2w  pending        ✗     0
 ── to review (2) ───────────────────────────────────────────────────────────────────────────────────────────────────────
 •  #35     重构面板布局与颜色                                 alice             S       3d    2d  pending              3
 •  #30     chore(main): release 0.5.0                         Release PR        S       0d        pending        ✓     0

@@ -101,11 +101,11 @@ class PrRow:
     has_conflicts: bool
     mergeable_unknown: bool
     check_state: str
-    additions: int = 0
-    deletions: int = 0
-    changed_files: int = 0
-    size: str = "S"
-    original_index: int = 0
+    additions: int
+    deletions: int
+    changed_files: int
+    size: str
+    original_index: int
 
 
 @dataclass(frozen=True)

@@ -47,6 +47,9 @@ def pr(
     last_commit: tuple[str, str | None] | None = None,
     last_review: tuple[str, str] | None = None,
     last_comment: tuple[str, str] | None = None,
+    additions: int = 0,
+    deletions: int = 0,
+    changed_files: int = 0,
 ) -> dict[str, object]:
     """A PR node in the GraphQL shape the fetch layer produces.
 
@@ -96,6 +99,9 @@ def pr(
             else []
         },
         "commits": {"nodes": [{"commit": commit}]},
+        "additions": additions,
+        "deletions": deletions,
+        "changedFiles": changed_files,
     }
 
 
